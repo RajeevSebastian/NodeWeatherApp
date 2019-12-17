@@ -8,7 +8,7 @@ const apiKey ="1b6692cea3e385932f5a35d849734e88";
 const request = require('request')
 
 app.get('/', function (req, res) {
-  res.render('index')
+  res.render('index',{weather:null , error : null})
 })
 
 app.post('/', function (req, res) {
